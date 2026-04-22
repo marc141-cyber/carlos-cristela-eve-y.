@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .sub-menu {
+            width: 100%;
+            height: 7vh;
+            background-color: rgb(225, 230, 105);
+            position: fixed;
+            top: 7vh;
+            z-index: 999;
+        }
+
+        .table-row td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .table-row a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .table-row a:hover {
+            background-color: limegreen;
+        }
+
+        .sections > div {
+            min-height: 100vh;
+            padding-top: 120px;
+        }
+
+        .sections div:nth-child(1){
+            background-color: lightblue;
+        }
+        .sections div:nth-child(2){
+            background-color: lightred;
+        }
+        .sections div:nth-child(3){
+            background-color: lightpink;
+        }
+        .sections div:nth-child(4){
+            background-color: lightgrey;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .about-text { flex: 1; padding: 20px; }
+        .about-image { flex: 1; text-align: center; }
+
+        .about-image img {
+            width: 250px;
+            height: 500px;
+            border-radius: 25%;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        }
+
+        .calendar {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .calendar td, .calendar th {
+            border: 2px solid indianred;
+            padding: 10px;
+        }
+
+        .DAY {
+            background-color: hotpink;
+        }
+
+        .edu-img {
+            width: 600px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        }
+    
+        .card img {
+            height: 350px;
+            object-fit: cover;
+        }
+        #latest, #birth, #educ, #ski {
+            scroll-margin-top: 14vh;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <ul class="main-nav">
+        <li><a href="index.html">My Portfolio</a></li>
+        <li><a href="index.html"><img src="evening.jpeg" alt="logo"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pro.html">Profile</a></li>
+    </ul>
+</header>
+
+<table class="sub-menu">
+    <tr class="table-row">
+        <td><a href="#latest">LATEST</a></td>
+        <td><a href="#birth">BIRTHDAY</a></td>
+        <td><a href="#educ">EDUCATION</a></td>
+        <td><a href="#ski">SKILLS</a></td>
+    </tr>
+</table>
+
+<div class="sections">
+
+    
+    <div id="latest" class="about">
+        <div class="about-text">
+            <h1>LATEST UPDATE</h1>
+            <p>Hi my name is Cristela Eve Y. Carlos, 20 years old, I live in Poblacion, Luna, Apayao.</p>
+            <p>I am a simple girl someone who is humble, kind, and content with the little things in life.She does'nt need expensive things or too much attention to be happy.She enjoys simple moments like spending time with family and friends, laughing and being herself.She is genuine, not pretending to be someone she's not, and she treats others with respect.</p>
+        </div>
+
+        <div class="about-image">
+            <img src="cristela.jpeg" alt="My photo">
+        </div>
+    </div>
+
+    
+    <div id="birth">
+        <h2 style="text-align:center;">My Birthday</h2>
+
+        <table class="calendar">
+            <tr><th colspan="7">October 3, 2005</th></tr>
+            <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="DAY">3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="educ" class="container py-5">
+        <h1 class="text-center mb-4">Educational Background</h1>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active text-center">
+                   
+                    <a href="college.html">
+                        <img src="colle.webp" class="edu-img d-block mx-auto" alt="College">
+                    </a> 
+                     <h3 class="mt-3">Apayao State College</h3>
+                </div>
+
+                <div class="carousel-item text-center">
+                    <a href="highschool.html">
+                        <img src="high.jpg" class="edu-img d-block mx-auto" alt="High School">
+                    </a> 
+                    <h3 class="mt-3">luna National High school</h3>
+                </div>
+
+                <div class="carousel-item text-center">
+                    
+                    <a href="elementary.html">
+                        <img src="elem.jpg" class="edu-img d-block mx-auto" alt="Elementary">
+                    </a>  
+                    <h3 class="mt-3">Luna Central School</h3>
+                </div>
+
+            </div> 
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+   
+    <div id="ski">
+        <div class="container mt-5">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Here are some of my skills.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Basket.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Basketball</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="Volley.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Volleyball</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-200">
+                        <img src="arnis.jpg" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">arnis</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
